@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "legitidev",
+  "version": "${version}",
+  "name": "LegitiDev",
+  "description": "",
+  "authors": ["kuko010"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/legitidev/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.kuko.legitidev.client.LegitidevDataGenerator"
+    ],
+    "client": [
+      "net.kuko.legitidev.client.LegitidevClient"
+    ],
+    "main": [
+      "net.kuko.legitidev.Legitidev"
+    ]
+  },
+  "mixins": [
+    "legitidev.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-language-kotlin": ">=${kotlin_loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
